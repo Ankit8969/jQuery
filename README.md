@@ -102,6 +102,35 @@ $(function () {
 ```
 
 
+## automatically invoked the jquery function 
+```
+$(function(){
+
+
+});
+```
+
+## Filter method in JQuery
+```
+$(function () {
+  $("li")
+    .filter((index) => {
+      return index % 3 == 1;
+    })
+    .css("background-color", "red");
+});
+
+```
+
+## Fast and Last Property
+```
+$(function () {
+  $("li").first().css("color", "red");
+  $("li").last().css("color", "blue");
+});
+```
+
+# Manipulating the DOM in jQuery
 
 
 
