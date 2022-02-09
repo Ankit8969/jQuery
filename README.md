@@ -179,6 +179,141 @@ $(document).ready(function(){
 });
 ```
 
+## Append method 
+```
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").append(" <b>Appended text</b>.");
+  });
+
+  $("#btn2").click(function(){
+    $("ol").append("<li>Appended item</li>");
+  });
+});
+```
+
+## prepand method
+```
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").prepend("<b>Prepended text</b>. ");
+  });
+  $("#btn2").click(function(){
+    $("ol").prepend("<li>Prepended item</li>");
+  });
+});
+```
+
+## another way to creating the item
+```
+function appendText() {
+  var txt1 = "<p>Text.</p>";        // Create text with HTML
+  var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
+  var txt3 = document.createElement("p");
+  txt3.innerHTML = "Text.";         // Create text with DOM
+  $("body").append(txt1, txt2, txt3);   // Append new elements
+}
+```
+
+## insertBefore and insertAfter
+```
+$("img").after("Some text after");
+
+$("img").before("Some text before");
+```
+
+
+# Removing Property in jQuery
+
+## removing and empty 
+```
+$("#div1").remove();
+```
+```
+$("#div1").empty();
+```
+
+## addClass(), removeCLass(), toggleClass() and css()
+```
+$("button").click(function(){
+  $("h1, h2, p").addClass("blue");
+  $("div").addClass("important");
+});
+```
+***IT add the two class***
+```
+$("#div1").addClass("important blue");
+```
+***Remove CLass***
+```
+$("h1, h2, p").removeClass("blue");
+```
+
+***Toggle FUnction***
+```
+ $("h1, h2, p").toggleClass("blue");
+ ```
+ 
+ ***Css() function ***
+ ```
+ $("p").css({"background-color": "yellow", "font-size": "200%"});
+ ```
+ 
+ ![img_jquerydim](https://user-images.githubusercontent.com/47697582/153184539-959bafe2-ad70-46c2-951b-7d72ffa63152.gif)
+
+ # Traversing Up the DOM Tree
+ 
+ > parent()
+> parents()
+> parentsUntil()
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
