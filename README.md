@@ -263,12 +263,50 @@ $("h1, h2, p").removeClass("blue");
 
  # Traversing Up the DOM Tree
  
- > parent()
-> parents()
-> parentsUntil()
+***parent() ***
+***parents()***
+***parentsUntil()***
  
 
+***The following example returns the direct parent element of each <span> elements:***
+```
+$("span").parent();
+```
+    
+***The following example returns all ancestors of all <span> elements:***
+```
+$("span").parents();
+```
 
+***The following example returns all ancestor elements between a <span> and a <div> element:***
+```
+$("span").parentsUntil("div");
+```
+    
+# Traversing Down the DOM Tree
+- children()
+- find()
+    
+***The following example returns all elements that are direct children of each <div> elements:***
+```
+    $("div").children();
+```
+***The following example returns all <p> elements with the class name "first", that are direct children of <div>***
+```
+$("div").children("p.first");
+```
+***The following example returns all <span> elements that are descendants of <div>***
+```
+    $("div").find("span");
+```
+***The following example returns all descendants of <div>***
+```
+    $("div").find("*");
+```
+
+    
+    
+    
 
 
 
