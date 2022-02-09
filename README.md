@@ -130,7 +130,54 @@ $(function () {
 });
 ```
 
-# Manipulating the DOM in jQuery
+# Method of getting the value
+
+## .text() and .html()
+```
+$(function(){
+  $("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  $("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
+  });
+});
+```
+
+## geeting the value of any input box 
+```
+$(document).ready(function(){
+  $("button").click(function(){
+    alert("Value: " + $("#test").val());
+  });
+});
+```
+
+## geeting the value of attribute
+```
+$(document).ready(function(){
+  $("button").click(function(){
+    alert($("#w3s").attr("href"));
+  });
+});
+```
+
+# Method of setting the value
+
+## text(), html() and val()
+```
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#test1").text("Hello world!");
+  });
+  $("#btn2").click(function(){
+    $("#test2").html("<b>Hello world!</b>");
+  });
+  $("#btn3").click(function(){
+    $("#test3").val("Dolly Duck");
+  });
+});
+```
 
 
 
